@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>
-			Kevin Ta's Website
-		</title>
+		<title>Kevin Ta</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
-		<h1>Welcome to my website!</h1>
-		<h2>About myself...</h2>
-		<dl>
-			I am:<br/>
-			<ul>
-			<li>Computer Engineer undergrad at Rochester Institute of Technology. </li>
-			<li>Second year of college. </li>
-			<li>Searching for a 2019 Summer co-op.</li>
-			<li>You're next potential worker.</li>
-			</ul>
-		</dl>
-		<p>
-			Availability: 2019 Summer, 2020 Spring-Summer, 2021 Spring-Summer
-		</p>
-		<hr/>
+		<div id="container">
+			<div id="header">
+				<h1>Kevin Ta</h1>
+				<p>Help me teach others</p>
+			</div>
+			<div id="availability">
+				<div id="smallheader">
+					<p>	 Availability: 2019 Summer, 2020 Spring-Summer, 2021 Spring-Summer</p>
+				</div>
+			</div>
+			<hr/>
+			
+			
+			<div id="content">
+				<div id="nav">
+					<ul>
+						<li><a class="selected" href="#header">Home</a></li>
+						<li><a href="#About">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+				
+				<div id="main">
+					<h1>About Me...</h1>
+					<img src="me.jpg" width = "200" alt="Picture of Me">
+					<div id="About">
+						<p>I am:</p>
+						<ul>
+						<li>Computer Engineer undergrad at Rochester Institute of Technology. </li>
+						<li>Second year of college. </li>
+						<li>Searching for a 2019 Summer co-op.</li>
+						<li>Your next potential worker.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="contact">
+				<p>Email: kxt7073@rit.edu<p>
+			</div>
+			<div id="footer">
+				Copyright &copy; 2019 Kevin Ta.
+			</div>
+		</div>
 	</body>
 </html>
