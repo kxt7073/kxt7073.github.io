@@ -12,6 +12,7 @@ a{
 h1,h2,h3{
 	margin:0;
 }
+
 #container{
 	background-color: white;
 	width: 1000px;
@@ -69,7 +70,7 @@ li a:hover:not(.selected){
 
 #main{
 	width: 800px;
-	float: inherit;
+	float: none;
 }
 
 #About{
