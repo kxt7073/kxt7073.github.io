@@ -1,0 +1,7 @@
+sliding effect
+loading animation
+resume
+static navigation and logo
+assign logo to home
+svg home
+add projects
