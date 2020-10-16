@@ -13,8 +13,8 @@
 	--fw-reg: 300;
 	--fw-bold: 900;
 
-	--clr-light: #1a1a1a;/*#fff;*/
-	--clr-dark: #fff;/*#1a1a1a;*/
+	--clr-dark: #1a1a1a;
+	--clr-light: #fff;
 	--clr-accent: #009345;
 
 	--fs-h1: 3rem;
@@ -42,8 +42,8 @@ html{
 }
 
 body{
-	background: var(--clr-light);
-	color: var(--clr-dark);
+	background: var(--clr-dark);
+	color: var(--clr-light);
 	margin: 0;
 	font-family: var(--ff-primary);
 	font-size: var(--fs-body);
@@ -72,7 +72,7 @@ strong { font-weight: var(--fw-bold) }
 	display: inline-block;
 	padding: .5em 2.5em;
 	background: var(--clr-accent);
-	color: var(--clr-dark);
+	color: var(--clr-light);
 	text-decoration: none;
 	cursor: pointer;
 	font-size: .8rem;
@@ -148,7 +148,7 @@ header{
 
 .nav{
 	position: fixed;
-	background: var(--clr-dark);
+	background: black;
 	color: var(--clr-light);
 	top: 0;
 	bottom: 0;
@@ -283,38 +283,37 @@ header{
 	}
 }
 
-/* My services section */
+/* My skills section */
 
-.my-services{
-	background-color: var(--clr-light);
-	/* background-image: url(../img/codebackground.jpg); */
-	opacity: 10;
+.my-skills{
+	background-color: var(--clr-dark);
+	background-image: url(../img/codingbackground-02.jpg);
 	background-size: cover;
 	background-blend-mode: multiply;
-	color: var(--clr-dark);
+	color: var(--clr-light);
 	text-align: center;
 }
 
-.section__title--services{
+.section__title--skills{
 	color: var(--clr-accent);
 	position: relative;
 }
 
-.section__title--services::after{
+.section__title--skills::after{
 	content: '';
 	display: block;
 	width: 2em;
 	height: 1px;
 	margin: .5em auto 1em;
-	background: var(--clr-dark);
+	background: var(--clr-light);
 	opacity: .25;
 }
 
-.services {
+.skills {
 	margin-bottom: 4em;
 }
 
-.service{
+.skill{
 	max-width: 500px;
 	margin: 0 auto;
 }
@@ -326,14 +325,15 @@ header{
 }
 
 @media (min-width: 800px){
-	.services{
+	.skills{
 		display: flex;
+		min-width: 1000px;
 		max-width: 1000px;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-	.service + .service {
+	.skill + .skill {
 		margin-left: 2em;
 
 	}
@@ -383,22 +383,26 @@ header{
 /* My Work */
 
 .my-work{
-	background-color: var(--clr-light);
-	color: var(--clr-dark);
+	background-color: var(--clr-dark);
+	color: var(--clr-light);
 	text-align: center;
 }
 
 .portfolio{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	max-width: 0 auto;
 }
 
 .portfolio__item{
 	background: var(--clr-accent);
-	overflow: hidden;
+	overflow: hidden;	
 }
 
 .portfolio__img{
+	width: 500px;
+	height: 500px;
+
 	transition: 
 		transform 750ms cubic-bezier(.5, 0, .5, 1),
 		opacity 250ms linear;
