@@ -142,6 +142,7 @@ header{
 .logo{
 	max-width: 100px;
 	position: fixed;
+	z-index: 1000;
 	
 }
 
@@ -316,6 +317,12 @@ header{
 .service{
 	max-width: 500px;
 	margin: 0 auto;
+}
+
+.classes__link:link{
+	color: var(--clr-accent);
+	background-color: transparent;
+	text-decoration: none;
 }
 
 @media (min-width: 800px){
